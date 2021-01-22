@@ -16,7 +16,7 @@ import (
 
 // ConnectStorm Create database connection
 func ConnectStorm() *storm.DB {
-	dbPath := GetEnvStr("DB_FILE", "")
+	dbPath := GetEnvStr("GEEK_DB", "")
 	var err error
 
 	if dbPath == "" {
